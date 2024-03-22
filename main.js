@@ -51,17 +51,15 @@ function result() {
 
     // replace placeholders in the story template with random value
     newStory = newStory.replaceAll(':insertx:', xItem).
-    
-    // check if a custom name is given & replace placeholder bob with it
     replaceAll(':inserty', yItem).replaceAll(':insertz', zItem)
 
-    // check if uk checkbox is checked and convert temperature & weight
+    // check if a custom name is given & replace placeholder bob with it
   if(customName.value !== '') {
     const name = customName.value;
     newStory = newStory.replaceAll('Bob', name)
 
   }
-
+// check if uk checkbox is checked and convert temperature & weight
   if(document.getElementById("uk").checked) {
     let weight = Math.round(300 / 14);
     weight += ' stone';
