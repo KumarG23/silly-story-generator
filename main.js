@@ -32,7 +32,6 @@ const insertZ =
 ]
 
 
-
 randomize.addEventListener('click', result);
 
 function result() {
